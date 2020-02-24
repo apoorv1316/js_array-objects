@@ -113,3 +113,37 @@ var person = {
 };
 
 var clone = {};
+
+// Output of the following
+let brothers = ["John", "Bran", "Robb"];
+let house = "Stark";
+let user = {
+  name: "Arya",
+  house: house,
+  brothers: brothers
+};
+
+let user2 = {
+  name: "Arya",
+  house: house,
+  brothers: brothers
+};
+
+let user3 = {
+  name: "Arya",
+  house: "Stark",
+  brothers: ["John", "Bran", "Robb"]
+};
+// Output of the below code and why?
+user.house === user2.house; // true:
+user.house == user2.house; // true:
+user.brothers === user2.brothers; // true:
+user.brothers == user2.brothers; // true:
+user.name == user2.name; // true:
+user.name === user2.name; //true:
+user.brothers == user3.brothers; // false:
+user.brothers === user3.brothers; // false:
+user.house === user2.house; // true
+user.house === user3.house; // true
+user.brothers[0] === user2.brothers[0]; // true
+user.brothers[0] === user3.brothers[0]; // true

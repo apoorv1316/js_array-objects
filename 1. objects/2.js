@@ -25,3 +25,7 @@ obj[city] = true;
 // 9. Uisng console.log log the value of the key defined above.
 console.log(obj[city]);
 // 10. Can you define a key of `let or var` in any object? Reason.
+obj.let="abc";
+obj.var="xyz";
+
+//yes we can define because in javascript we can use any string as a key in an object.
